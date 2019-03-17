@@ -27,7 +27,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.widget.NestedScrollView;
 
 public class NavigationView extends LinearLayout {
-    private LayoutInflater mInflator;
+    private LayoutInflater mInflater;
     private InternalNavigationView mInternalNavigationView;
     private LinearLayout mScrollingContainer;
     private NestedScrollView mNestedScrollView;
@@ -53,8 +53,8 @@ public class NavigationView extends LinearLayout {
     }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        mInflator = LayoutInflater.from(getContext());
-        mInflator.inflate(R.layout.extended_navigation_view_layout, this, true);
+        mInflater = LayoutInflater.from(getContext());
+        mInflater.inflate(R.layout.extended_navigation_view_layout, this, true);
 
         mNestedScrollView = findViewById(R.id.navigation_scrolling_view);
         mScrollingContainer = findViewById(R.id.navigation_scrolling_container);
@@ -205,7 +205,7 @@ public class NavigationView extends LinearLayout {
     }
 
     public View inflateFixedHeaderView(@LayoutRes int res) {
-        View v = mInflator.inflate(res, this, false);
+        View v = mInflater.inflate(res, this, false);
         addFixedHeaderView(v);
         return v;
     }
@@ -256,7 +256,7 @@ public class NavigationView extends LinearLayout {
     }
 
     public View inflateFixedFooterView(@LayoutRes int res) {
-        View v = mInflator.inflate(res, this, false);
+        View v = mInflater.inflate(res, this, false);
         addFixedFooterView(v);
         return v;
     }
@@ -286,7 +286,7 @@ public class NavigationView extends LinearLayout {
     }
 
     public View inflateScrollableFooterView(@LayoutRes int res) {
-        View v = mInflator.inflate(res, mScrollingContainer, false);
+        View v = mInflater.inflate(res, mScrollingContainer, false);
         addScrollableFooterView(v);
         return v;
     }
