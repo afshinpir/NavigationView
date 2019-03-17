@@ -68,5 +68,6 @@ all types of headers and footers, you can create layouts like this one:
 ![](./blob/all-sections.gif "All fixed and scrollable headers and footers")
 
  Other attributes of NavigationView are also supported. 
+ 
  ---
  This widget is created based on Android's default NavigationView.
