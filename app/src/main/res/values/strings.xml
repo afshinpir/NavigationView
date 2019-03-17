@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">FixedFooterNavigationViewSample</string>
+    <string name="app_name">NavigationView Sample</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string name="nav_footer_button">Sample Button</string>
+    <string name="nav_footer_text">Sample Text</string>
+    <string name="nav_fixed_footer_text">Sample Fixed Text</string>
 </resources>

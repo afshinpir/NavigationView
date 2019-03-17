@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationViewWithFooter">
+        <attr name="android:background"/>
+        <attr name="android:fitsSystemWindows"/>
+        <attr name="android:maxWidth"/>
+        <attr name="elevation"/>
+        <attr name="menu" format="reference"/>
+        <attr name="itemIconTint" format="color"/>
+        <attr name="itemTextColor" format="color"/>
+        <attr name="itemBackground" format="reference"/>
+        <attr name="itemTextAppearance" format="reference"/>
+        <attr name="scrollableHeaderLayout" format="reference"/>
+        <attr name="fixedHeaderLayout" format="reference"/>
+        <attr name="scrollableFooterLayout" format="reference" />
+        <attr name="fixedFooterLayout" format="reference" />
+        <attr name="itemHorizontalPadding" format="dimension"/>
+        <attr name="itemIconPadding" format="dimension"/>
+    </declare-styleable>
+</resources>
