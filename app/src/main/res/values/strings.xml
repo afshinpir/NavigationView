@@ -7,7 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="nav_footer_button">Sample Button</string>
-    <string name="nav_footer_text">Sample Text</string>
-    <string name="nav_fixed_footer_text">Sample Fixed Text</string>
+    <string name="nav_scrollable_header">Sample Scrollable Header Title</string>
+    <string name="nav_footer_button">Sample Footer Button</string>
+    <string name="nav_footer_text">Sample Footer Text</string>
+    <string name="nav_fixed_header_text">Sample Fixed Header</string>
+    <string name="nav_fixed_header_subtext">Sample Fixed Sub-Header</string>
+    <string name="nav_fixed_header_logout"><u>Logout</u></string>
+    <string name="nav_fixed_footer_text">Sample Fixed Footer</string>
 </resources>

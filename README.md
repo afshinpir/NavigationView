@@ -3,7 +3,7 @@
 # NavigationView
 
 This Android library is designed for adding fixed and scrollable header
-and footer support to Android's default `NavigationView`.
+and footer support to Android's default NavigationView.
 
 ## Usage
 
@@ -16,21 +16,21 @@ This library is published on JitPack. You can add it to your project in
 
 Add the following to your root build.gradle at the end of repositories:
 ```gradle
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 2. **Add dependency**
 
 Add following dependency in your project:
 ```gradle
-	dependencies {
-	        implementation 'com.github.afshinpir:NavigationView:v1.0'
-	}
+dependencies {
+    implementation 'com.github.afshinpir:NavigationView:v1.0'
+}
 ```
 
 **Note**: NavigationView uses
@@ -52,7 +52,7 @@ in you layout and code.
 
 #### Widget
  
-Rather than a simple `app:headerLayout`, this new view provides 4
+Rather than a simple `app:headerLayout`, this new widget provides 4
 different types of header and footer:
 
 | Attribute | Description | 
@@ -62,5 +62,11 @@ different types of header and footer:
 | `app:scrollableFooterLayout` | Scrollable footer which scrolls along menu of NavigationView.|
 | `app:fixedFooterLayout` | Fixed footer which stay on bottom of NavigationView all the time.|
 
-You can add different types of header and footer at same time. Other
-attributes of NavigationView are also supported.
+You can add different types of header and footer at same time. By adding
+all types of headers and footers, you can create layouts like this one:
+
+![](./blob/all-sections.gif "All fixed and scrollable headers and footers")
+
+ Other attributes of NavigationView are also supported. 
+ ---
+ This widget is created based on Android's default NavigationView.

@@ -20,9 +20,9 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:fixedHeaderLayout="@layout/nav_fixed_header"
-        app:scrollableHeaderLayout="@layout/nav_header_main"
+        app:scrollableHeaderLayout="@layout/nav_scrollable_header"
+        app:scrollableFooterLayout="@layout/nav_scrollable_footer"
         app:fixedFooterLayout="@layout/nav_fixed_footer"
-        app:scrollableFooterLayout="@layout/nav_footer_main"
         app:menu="@menu/activity_main_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

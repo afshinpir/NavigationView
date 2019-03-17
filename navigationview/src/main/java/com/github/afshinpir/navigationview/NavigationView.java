@@ -24,15 +24,17 @@ import androidx.annotation.RestrictTo;
 import androidx.annotation.StyleRes;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.core.widget.NestedScrollView;
 
-public class NavigationView extends LinearLayout {
+public class NavigationView extends ScrimInsetsLinearLayout {
     private LayoutInflater mInflater;
     private InternalNavigationView mInternalNavigationView;
     private LinearLayout mScrollingContainer;
     private NestedScrollView mNestedScrollView;
     private int mSeparator = 0;
     private int mMaxWidth = 0;
+    private int mSystemMenuTopPadding = 0;
 
     public NavigationView(Context context) {
         this(context, null);
@@ -62,7 +64,6 @@ public class NavigationView extends LinearLayout {
 
         mSeparator = getResources().getDimensionPixelSize(R.dimen.navigation_separator_vertical_padding);
         super.setOrientation(VERTICAL);
-        setWillNotDraw(true);
 
         initNavigationViewStyle(context, attrs, defStyleAttr);
     }
@@ -202,6 +203,16 @@ public class NavigationView extends LinearLayout {
         }
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    @Override
+    protected void onInsetsChanged(WindowInsetsCompat insets) {
+        int topPadding = insets.getSystemWindowInsetTop();
+
+        if (mSystemMenuTopPadding != topPadding) {
+            mSystemMenuTopPadding = topPadding;
+            ((MarginLayoutParams)getLayoutParams()).topMargin = mSystemMenuTopPadding;
+        }
     }
 
     public View inflateFixedHeaderView(@LayoutRes int res) {
@@ -407,5 +418,6 @@ public class NavigationView extends LinearLayout {
     }
 
     public interface OnNavigationItemSelectedListener extends
-            com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener {}
+            com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener {
+    }
 }
