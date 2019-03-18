@@ -70,6 +70,6 @@ Other attributes of NavigationView are also supported.
  
 ### Note
 
-Since widget is created based on Android's [NavigationView][1], I was limited to its limitations. I may try to improvd library adding new features later.
+Since widget is created based on Android's [NavigationView][1], I was constrainted to its limitations. I may try to improve library adding new features later.
 
 [1]: https://developer.android.com/reference/android/support/design/widget/NavigationView
