@@ -3,7 +3,7 @@
 # NavigationView
 
 This Android library is designed for adding fixed and scrollable header
-and footer support to Android's default NavigationView.
+and footer support to Android's [NavigationView][1].
 
 ## Usage
 
@@ -33,13 +33,12 @@ dependencies {
 }
 ```
 
-**Note**: NavigationView uses
-[Android X](https://developer.android.com/jetpack/androidx/) artifacts.
-So you need to migrate to it before using this library.
+**Note**: This library uses
+[Android X](https://developer.android.com/jetpack/androidx/) artifacts. Thus, you need to migrate to it before using this library.
 
 ### Code
 
-In order to use this NavigationView, it is enough to change your widget
+In order to use this library, it is enough to change your widget
 from:
 
 `android.support.design.widget.NavigationView` 
@@ -67,7 +66,10 @@ all types of headers and footers, you can create layouts like this one:
 
 ![](./blob/all-sections.gif "All fixed and scrollable headers and footers")
 
- Other attributes of NavigationView are also supported. 
+Other attributes of NavigationView are also supported. 
  
- ---
- This widget is created based on Android's default NavigationView.
+### Note
+
+Since widget is created based on Android's [NavigationView][1], I was limited to its limitations. I may try to improvd library adding new features later.
+
+[1]: https://developer.android.com/reference/android/support/design/widget/NavigationView
