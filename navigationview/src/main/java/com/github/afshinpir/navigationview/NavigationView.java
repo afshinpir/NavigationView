@@ -33,6 +33,7 @@ public class NavigationView extends ScrimInsetsLinearLayout {
     private LinearLayout mScrollingContainer;
     private NestedScrollView mNestedScrollView;
     private int mSeparator = 0;
+    private int mBottomPadding = 0;
     private int mMaxWidth = 0;
     private int mSystemMenuTopPadding = 0;
 
@@ -63,7 +64,10 @@ public class NavigationView extends ScrimInsetsLinearLayout {
         mInternalNavigationView = findViewById(R.id.main_navigation_view);
 
         mSeparator = getResources().getDimensionPixelSize(R.dimen.navigation_separator_vertical_padding);
+        mBottomPadding = getResources().getDimensionPixelSize(R.dimen.navigation_padding_bottom);
+
         super.setOrientation(VERTICAL);
+        mInternalNavigationView.setMenuPaddingBottom(mBottomPadding);
 
         initNavigationViewStyle(context, attrs, defStyleAttr);
     }
@@ -304,7 +308,7 @@ public class NavigationView extends ScrimInsetsLinearLayout {
 
     public void addScrollableFooterView(@NonNull View header) {
         mScrollingContainer.addView(header);
-        mInternalNavigationView.setMenuPaddingBottom(mSeparator * 2);
+        mInternalNavigationView.setMenuPaddingBottom(mSeparator);
     }
 
     public int getScrollableFooterCount() {
@@ -326,7 +330,7 @@ public class NavigationView extends ScrimInsetsLinearLayout {
             mScrollingContainer.removeViewAt(idx);
 
             if (getScrollableFooterCount() == 0) {
-                mInternalNavigationView.setMenuPaddingBottom(0);
+                mInternalNavigationView.setMenuPaddingBottom(mBottomPadding);
             }
         }
     }

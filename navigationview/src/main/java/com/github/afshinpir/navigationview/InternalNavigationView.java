@@ -28,8 +28,6 @@ final class InternalNavigationView extends NavigationView {
     private void init() {
         mMenu = findViewById(com.google.android.material.R.id.design_navigation_view);
         mMenu.setNestedScrollingEnabled(false);
-        mMenu.setClipToPadding(true);
-        setMenuPaddingBottom(0);
     }
 
     void setMenuPaddingBottom(int bottom) {

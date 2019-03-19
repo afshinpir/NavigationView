@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="fixedFooterBackground">#20000000</color>
+    <color name="scrollableSectionBackground">#402196F3</color>
 </resources>
