@@ -29,7 +29,7 @@ allprojects {
 Add following dependency in your project:
 ```gradle
 dependencies {
-    implementation 'com.github.afshinpir:NavigationView:v1.0'
+    implementation 'com.github.afshinpir:NavigationView:v1.1'
 }
 ```
 
